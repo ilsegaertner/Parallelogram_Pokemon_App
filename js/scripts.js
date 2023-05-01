@@ -13,7 +13,7 @@ let pokemonList = [
   }, 
   {
     name: 'Jigglypuff', 
-    height: 0.5;
+    height: 0.5,
     type: ['fairy', 'normal'], 
     number: 39
   }

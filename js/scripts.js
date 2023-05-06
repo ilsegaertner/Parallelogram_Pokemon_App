@@ -31,12 +31,6 @@ for (let i=0; i <pokemonList.length; i++) {
 
 }
 
-
-
-
-
-
-
 /*
 
 let person1 = {firstName:'Thomas', lastName:'Bernat', age: 31};

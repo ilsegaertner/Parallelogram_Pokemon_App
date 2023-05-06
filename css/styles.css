@@ -6,16 +6,11 @@
   font-style: italic;
   font-weight: 800;
   line-height: 3;
-  /* color: #1000ff; */
   color: #2a2d9b;
-  /* background-color: #2f243a24; */
   background-color: #a1a01d2b;
   text-align: center;
   overflow: hidden;
   border-radius: 40px;
-  /* box-shadow: inset 0 0em 0em rgba(0, 0, 0, 0), 0 0 0 0px rgb(255, 255, 255),
-    0.1em 0.1em 1em rgba(0, 0, 0, 0.3); */
-    /* box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.1) */
 }
 
 body:hover {
@@ -30,10 +25,6 @@ h1{
   font-style: normal;
   font-weight: 600;
   line-height: 1.6;
-/* background: -moz-radial-gradient(circle, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 36%, rgba(226,223,223,1) 100%);
-background: -webkit-radial-gradient(circle, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 36%, rgba(226,223,223,1) 100%);
-background: radial-gradient(circle, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 36%, rgba(226,223,223,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a2be2",endColorstr="#e2dfdf",GradientType=1); */
 background: rgb(138,43,226);
 background: -moz-linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 59%, rgba(226,223,223,1) 100%);
 background: -webkit-linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 59%, rgba(226,223,223,1) 100%);
@@ -47,7 +38,6 @@ box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1), 0 2 0 0px rgb(255, 255, 255),
 
 h1:hover {
   cursor: pointer;
-  /* color: #5bd415; */
   color: #d1d1d1;
   font-style: normal;
   transform: scaleY(8);

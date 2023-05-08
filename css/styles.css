@@ -1,5 +1,5 @@
 * {
-  max-width: 820px;
+  max-width: 600px;
   margin: 14px auto;
   padding:20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -40,7 +40,18 @@ h1:hover {
   cursor: pointer;
   color: #d1d1d1;
   font-style: normal;
-  transform: scaleY(8);
+  /* transform: scaleY(2); */
+}
+
+p {
+  transition: 0.2s;
+}
+
+p:hover {
+  background-color: #2a2d9b;
+  /* background: -webkit-linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 59%, rgba(226,223,223,1) 100%); */
+  color: white;
+  opacity: 1;
 }
 
 footer {

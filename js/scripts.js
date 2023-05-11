@@ -1,25 +1,60 @@
 
+let pokemonRepository = (function () {
+  
+  let pokemonList = [
+    {
+      name: 'Butterfree', 
+      height: 1.1,
+      type: ['Bug', 'Flying'],
+      number: 12
+    }, 
+    {
+      name: 'Charizard', 
+      height: 1.7,
+      type: ['Fire', 'Flying'],
+      number: 6
+    }, 
+    {
+      name: 'Jigglypuff', 
+      height: 0.5,
+      type: ['Fairy', 'Normal'], 
+      number: 39
+    }
+  ];
 
-let pokemonList = [
-  {
-    name: 'Butterfree', 
-    height: 1.1,
-    type: ['Bug', 'Flying'],
-    number: 12
-  }, 
-  {
-    name: 'Charizard', 
-    height: 1.7,
-    type: ['Fire', 'Flying'],
-    number: 6
-  }, 
-  {
-    name: 'Jigglypuff', 
-    height: 0.5,
-    type: ['Fairy', 'Normal'], 
-    number: 39
+  function getAll() {
+    return pokemonList;
   }
-];
+
+  function add(pokemon) {
+    return pokemonList.push(pokemon);
+  }
+
+  return {
+    getAll:getAll,
+    add:add
+  };
+})();
+
+let pokemonList = pokemonRepository.getAll();
+
+function loopPokemon(pokemon) {
+  if (pokemon.height > 1.5) {
+    document.write("<p>" + pokemon.name + " " + '(' + 'Height:' + " " + pokemon.height + ')' + " " + '(' + 'Type:' + " " + pokemon.type + ')' + " " + 'Wow, that\'s big!!' + "</p>");
+  } else {
+    document.write ("<p>" + pokemon.name + " " + '(' + 'Height:' + " " + pokemon.height + ')' + " " + '(' + 'Type:' + " " + pokemon.type + ')' + "</p>");
+  }
+}
+
+pokemonList.forEach(loopPokemon);
+
+
+
+
+/* my version
+
+document.write(pokemonRepository.getAll());
+
 
 function loopPokemon (pokemon) {
   if (pokemon.height > 1.5) {
@@ -31,7 +66,11 @@ function loopPokemon (pokemon) {
 
 pokemonList.forEach(loopPokemon);
 
-/* old for-Loop
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+//old for-Loop
 
 for (let i=0; i <pokemonList.length; i++) {
 

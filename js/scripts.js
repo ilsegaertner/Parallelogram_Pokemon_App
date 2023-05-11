@@ -20,8 +20,6 @@ let pokemonList = [
     number: 39
   }
 ];
-  
-
 
 function loopPokemon (pokemon) {
   if (pokemon.height > 1.5) {
@@ -33,11 +31,14 @@ function loopPokemon (pokemon) {
 
 pokemonList.forEach(loopPokemon);
 
-// for (let i=0; i <pokemonList.length; i++) {
+/* old for-Loop
 
-//   if (pokemonList[i].height > 1.5) {
-//     document.write ("<p>" + pokemonList[i].name + " " + '(' + 'Height:' + " " + pokemonList[i].height + ')' + " " + '(' + 'Type:' + " " + pokemonList[i].type + ')' + " " + 'Wow, that\'s big!!' + "</p>")
-//   } else {
-//   document.write ("<p>" + pokemonList[i].name + " " + '(' + 'Height:' + " " + pokemonList[i].height + ')' + " " + '(' + 'Type:' + " " + pokemonList[i].type + ')' + "</p>")
-// }
+for (let i=0; i <pokemonList.length; i++) {
 
+  if (pokemonList[i].height > 1.5) {
+    document.write ("<p>" + pokemonList[i].name + " " + '(' + 'Height:' + " " + pokemonList[i].height + ')' + " " + '(' + 'Type:' + " " + pokemonList[i].type + ')' + " " + 'Wow, that\'s big!!' + "</p>")
+  } else {
+  document.write ("<p>" + pokemonList[i].name + " " + '(' + 'Height:' + " " + pokemonList[i].height + ')' + " " + '(' + 'Type:' + " " + pokemonList[i].type + ')' + "</p>")
+}
+
+*/

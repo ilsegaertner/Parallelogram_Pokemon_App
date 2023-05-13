@@ -36,7 +36,16 @@ let pokemonRepository = (function () {
   };
 })();
 
-let pokemonList = pokemonRepository.getAll();
+
+// let pokemonList = pokemonRepository.getAll();
+console.log(pokemonRepository.getAll());
+pokemonRepository.add({
+  name: 'Pikachu',
+  height: 0.4,
+  type: ['Electric'], 
+  number: 42
+});
+console.log(pokemonRepository.getAll());
 
 function loopPokemon(pokemon) {
   if (pokemon.height > 1.5) {
@@ -46,6 +55,8 @@ function loopPokemon(pokemon) {
   }
 }
 
+// pokemonList.forEach(loopPokemon);
+let pokemonList = pokemonRepository.getAll();
 pokemonList.forEach(loopPokemon);
 
 

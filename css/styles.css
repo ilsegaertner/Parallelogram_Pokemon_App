@@ -74,3 +74,25 @@ header {
   margin-top: -32px;
 }
 
+.button-class {
+  border-radius: 15px;
+}
+
+.button-class:hover {
+  cursor: pointer;
+}
+
+.all-pokes {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+li {
+  flex-basis: auto;
+  flex-shrink: 5;
+}

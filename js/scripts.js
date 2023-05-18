@@ -100,6 +100,9 @@ for (let i=0; i <pokemonList.length; i++) {
 
 */
 
+
+/* background color change */
+
 var background = document.getElementById('background-color');
 background.addEventListener('click', changeColor, false);
 background.addEventListener('dblclick', changeColor, false);

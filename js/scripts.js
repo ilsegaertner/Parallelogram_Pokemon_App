@@ -21,6 +21,8 @@ let pokemonRepository = (function () {
     }
   ];
 
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+
   function getAll() {
     return pokemonList;
   }
@@ -38,24 +40,24 @@ let pokemonRepository = (function () {
     listpokemon.appendChild(button);
     ulList.appendChild(listpokemon); 
     button.addEventListener('click', function(showDetails){
-      console.log(pokemon);
+    console.log(pokemon);
     })
-}
+  }
 
-function showDetails(pokemon) {
+  function showDetails(pokemon) {
   console.log (pokemon);  
-}
+  }
 
   return {
     getAll:getAll,
     add:add,
     addListItem:addListItem
   };
+
 })();
 
 
 // let pokemonList = pokemonRepository.getAll();
-
 console.log(pokemonRepository.getAll());
 pokemonRepository.add({
   name: 'Pikachu',
@@ -75,36 +77,6 @@ pokemonList.forEach(loopPokemon);
 
 
 
-/* my version
-
-document.write(pokemonRepository.getAll());
-
-
-function loopPokemon (pokemon) {
-  if (pokemon.height > 1.5) {
-    document.write("<p>" + pokemon.name + " " + '(' + 'Height:' + " " + pokemon.height + ')' + " " + '(' + 'Type:' + " " + pokemon.type + ')' + " " + 'Wow, that\'s big!!' + "</p>")
-  } else {
-    document.write ("<p>" + pokemon.name + " " + '(' + 'Height:' + " " + pokemon.height + ')' + " " + '(' + 'Type:' + " " + pokemon.type + ')' + "</p>")
-  }
-}
-
-pokemonList.forEach(loopPokemon);
-
-
-////////////////////////////////////////////////////////////////////////////////////////
-
-
-//old for-Loop
-
-for (let i=0; i <pokemonList.length; i++) {
-
-  if (pokemonList[i].height > 1.5) {
-    document.write ("<p>" + pokemonList[i].name + " " + '(' + 'Height:' + " " + pokemonList[i].height + ')' + " " + '(' + 'Type:' + " " + pokemonList[i].type + ')' + " " + 'Wow, that\'s big!!' + "</p>")
-  } else {
-  document.write ("<p>" + pokemonList[i].name + " " + '(' + 'Height:' + " " + pokemonList[i].height + ')' + " " + '(' + 'Type:' + " " + pokemonList[i].type + ')' + "</p>")
-}
-
-*/
 
 
 /* background color change */

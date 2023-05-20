@@ -95,7 +95,7 @@ pokemonRepository.loadList().then(function() {
 
 
 
-/* background color change */
+/* changing background color on click */
 
 var background = document.getElementById('background-color');
 background.addEventListener('click', changeColor, false);

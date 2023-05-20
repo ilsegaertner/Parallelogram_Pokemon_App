@@ -2,11 +2,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --box-shadow-right1: #29636859;
+  --box-shadow-right2: #e275fd;
+  --box-shadow-right3: #8d9d9f9e;
+  --box-shadow-left1: #8687473b;
+  --box-shadow-left2: #fcff43b3;
+  --box-shadow-left3: #4c4c2e66;
+  --body-background-color-darkblue: #0f1032;
+  --body-background-color-greypink:#877e85;
+  --body-background-color-greygreen: #5d6864;
+  --font-color1: black;
+  --font-color2: #2e0046;
+  --font-color3: #f5ff649c;
+}
+
 .main-div {
   /* max-width: 800px; */
-  margin: 14px auto;
+  margin: 89px auto;
   /* padding:20px; */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 600;
   line-height: 3;
@@ -15,10 +30,11 @@
   text-align: center;
   /* overflow: hidden; */
   border-radius: 40px;
+  z-index: 3;
 }
 
 body {
-  background-color: #0f1032;
+  background-color: var(--body-background-color-greygreen);
   /* background-color: #5d6864; */
 }
 
@@ -30,19 +46,23 @@ body:hover {
 
 h1{
   /* border-radius: 80px; */
-  margin-top: -6px;
+  margin-top: 73px;
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
-  background-color: #8a2be2;
+  /* background-color: #8d8697a6; */
   text-align: center;
-  background: rgb(138,43,226);
+  /* color:#cfcfd99c; */
+  color: var(--font-color2);
+  border: #e275fd;
+  font-size: 20px;
+  /* background: rgb(138,43,226); */
   font-style: normal;
   font-weight: 600;
   line-height: 1.6;
-  background: rgb(138,43,226);
+  /* background: rgb(138,43,226);
   background: -moz-linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 59%, rgba(226,223,223,1) 100%);
-  background: -webkit-linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 59%, rgba(226,223,223,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 59%, rgba(226,223,223,1) 100%); */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8a2be2",endColorstr="#e2dfdf",GradientType=1);
   box-shadow: inset 0 -1em 1em rgba(0, 0, 0, 0.1), 0 2 0 0px rgb(255, 255, 255),
     0.3em 0.2em 0em rgba(0, 0, 0, 0.1);
@@ -52,6 +72,7 @@ h1{
   0.3em 0.3em 1em rgba(0, 0, 0, 0.3); */
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  display: none;
 }
 
 h1:hover {
@@ -69,6 +90,7 @@ p {
   font-style: italic;
   font-weight: 600;
   line-height: 3;
+  color: var(--font-color2);
   /* color: #2a2d9b; */
   /* background-color: #a1a01d2b; */
   text-align: center;
@@ -76,14 +98,7 @@ p {
   border-radius: 40px;
 }
 
-p:hover {
-  background-color: #2a2d9b;
-  /* background: -webkit-linear-gradient(180deg, rgba(138,43,226,1) 0%, rgba(129,123,123,1) 59%, rgba(226,223,223,1) 100%); */
-  color: white;
-  opacity: 1;
-}
 
-/*
 footer {
   background-color: #494949;
   bottom: 0;
@@ -99,9 +114,12 @@ header {
   left:0;
   right: 0;
   position: fixed;
-  margin-top: -32px;
-  padding:32px;
-} */
+  margin-top: px;
+  padding:px;
+  cursor: pointer;
+  color: #b4ff50;
+  font-style: normal;
+}
 
 .button-class {
   border-radius: 50vh;
@@ -112,9 +130,10 @@ header {
   margin: 14px auto;
   padding:20px;
   font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
+  font-style:italic;
   font-weight: 600;
   line-height: 3;
+  color: var(--font-color2);
   /* color: #2a2d9b; */
   /* background-color: #a1a01d2b; */
   text-align: center;
@@ -140,7 +159,7 @@ header {
   max-width: 800px;
   margin: 14px auto;
   padding:20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 600;
   line-height: 3;
@@ -174,7 +193,7 @@ li {
   max-width: 800px;
   margin: 14px auto;
   padding:20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 600;
   line-height: 3;
@@ -198,7 +217,7 @@ button:hover {
   100% { text-indent: -200vh }
  }
  
- /* .marquee {
+  /*.marquee {
   padding: 2px;
   overflow: hidden;
   white-space: nowrap;
@@ -206,13 +225,14 @@ button:hover {
   bottom: 0;
   left:0;
   right: 0;
-  position: fixed;
+  position: relative;
   width: 100%;
   margin-bottom: 50vh;
   border-radius: 0px;
   z-index: 8;
   font-size: 25px;
   color: #ff0000;
+  z-index:2;
  } */
  
 
@@ -224,8 +244,8 @@ button:hover {
   border-radius: 50px;
   max-width: 900px;
   margin: 0 auto;
-  inset -0.3em -0.3em 0.6em rgba(0,0,0,0.5),
-inset 0.3em 0.3em 0.6em rgba(256,256,256,0.7);
+  box-shadow:inset -0.3em -0.3em 0.6em var(--box-shadow-right1),
+  inset 0.3em 0.3em 0.6em var(--box-shadow-left1);
 }
 
 .about-picture {

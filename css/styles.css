@@ -18,12 +18,12 @@
 }
 
 body {
-  /* background-color: #2a2d9b; */
-  background-color: #dddddd
+  background-color: #0f1032;
+  /* background-color: #5d6864; */
 }
 
 body:hover {
-  color:#92ff02;
+  color:#000000;
   cursor: pointer;
 
 }
@@ -158,32 +158,31 @@ li {
   /* background-color: #f1dfae5e; */
   /* background-color: #e2e1b9; */
   border-top-width: 0px;
-border-top-style: solid;
-border-right-width: 0px;
-border-right-style: solid;
-border-left-width: 0px;
-border-left-style: solid;
-border-bottom-width: 0px;
-border-bottom-style: solid;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-right: 0px;
-margin-left: 0px;
-width: 112px;
-list-style-type: none;
-
-max-width: 800px;
-margin: 14px auto;
-padding:20px;
-font-family: 'Times New Roman', Times, serif;
-font-style: italic;
-font-weight: 600;
-line-height: 3;
-/* color: #2a2d9b; */
-/* background-color: #a1a01d2b; */
-text-align: center;
-/* overflow: hidden; */
-border-radius: 40px;
+  border-top-style: solid;
+  border-right-width: 0px;
+  border-right-style: solid;
+  border-left-width: 0px;
+  border-left-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 112px;
+  list-style-type: none;
+  max-width: 800px;
+  margin: 14px auto;
+  padding:20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 3;
+  /* color: #2a2d9b; */
+  /* background-color: #a1a01d2b; */
+  text-align: center;
+  /* overflow: hidden; */
+  border-radius: 40px;
 }
 
 button:hover {
@@ -199,12 +198,11 @@ button:hover {
   100% { text-indent: -200vh }
  }
  
- .marquee {
+ /* .marquee {
   padding: 2px;
   overflow: hidden;
   white-space: nowrap;
   animation: marquee 20s linear infinite;
-  /* background-color: #efeed8; */
   bottom: 0;
   left:0;
   right: 0;
@@ -215,17 +213,19 @@ button:hover {
   z-index: 8;
   font-size: 25px;
   color: #ff0000;
- }
+ } */
  
 
  #background-color {
-  background-color:#a0d468;
-transition: background-color 0.3s; 
-z-index: 1;
-position: relative;
-border-radius: 50px;
-max-width: 900px;
-margin: 0 auto;
+  background-color:#878787;
+  transition: background-color 0.3s; 
+  z-index: 1;
+  position: relative;
+  border-radius: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+  inset -0.3em -0.3em 0.6em rgba(0,0,0,0.5),
+inset 0.3em 0.3em 0.6em rgba(256,256,256,0.7);
 }
 
 .about-picture {

@@ -13,9 +13,11 @@
   --body-background-color-greypink:#877e85;
   --body-background-color-greygreen: #5d6864;
   --body-background-color-blue: #3102e1;
+  --body-background-color-lightgrey: #a1a1a1;
   --font-color1: #ff0000;
   --font-color2: #2e0046;
   --font-color3: #f5ff649c;
+  --font-color4:#e6ffc4;
   --accent:#b4ff50;
   --header:#8d8d8d;
   --header2:#509fff;
@@ -41,7 +43,7 @@
 }
 
 body {
-  background-color: var(--body-background-color-blue);
+  background-color: var(--body-background-color-lightgrey);
   /* background-color: #5d6864; */
 }
 
@@ -95,7 +97,7 @@ h1:hover {
 
  
 header {
-  background-color: var(--body-background-color-blue);
+  background-color: var(--body-background-color-lightgrey);
   top: 0;
   left:0;
   right: 0;
@@ -108,8 +110,8 @@ header {
 }
 
 h1 {
-  margin: -19px;
-  font-size: 20px;
+  margin: -13px;
+  font-size: 1.1rem;
 }
 
 .button-class {
@@ -137,7 +139,7 @@ h1 {
 }
 
 .button-class:active, .button-class:visited {
-  color: var(--font-color1);
+  color: var(--font-color4);
   font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
   font-style: normal;
@@ -263,7 +265,7 @@ p {
   width: 100%;
   margin-bottom: -16vh;
   border-radius: 0px;
-  color: #ff0000;
+  color: var(--font-color4);
   z-index: 5;
  }
 

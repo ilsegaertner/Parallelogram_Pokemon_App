@@ -127,7 +127,7 @@ button:hover {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  /* gap: 20px; */
+  gap: 7px;
   /* background-color: #9a979f29; */
   /* background-color: #e2e1b9; */
 
@@ -163,7 +163,7 @@ li {
   margin-bottom: 0px;
   margin-right: 0px;
   margin-left: 0px;
-  width: 112px;
+  /* width: 112px; */
   list-style-type: none;
   max-width: 800px;
   margin: 14px auto;

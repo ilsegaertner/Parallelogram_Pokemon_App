@@ -19,18 +19,21 @@
   --font-color3: #f5ff649c;
   --font-color4:#e6ffc4;
   --accent:#b4ff50;
+  --accent2:#d7ddff;
   --header:#8d8d8d;
   --header2:#509fff;
   --header3:#8d9d9f;
   --footer:#494949;
   --footer2:#0f1032;
+  --font-family1: 'Mulish', sans-serif;
+  --font-family1mulish_semibold: 'Mulish', sans-serif;
 }
 
 .main-div {
   /* max-width: 800px; */
   margin: 89px auto;
   /* padding:20px; */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family1)
   font-style: italic;
   font-weight: 600;
   line-height: 3;
@@ -105,8 +108,10 @@ header {
   margin-top: px;
   padding:px;
   cursor: pointer;
-  color:var(--accent);
+  color:var(--accent2);
   font-style: normal;
+  font-family: var(--font-family1mulish_semibold);
+  font-weight: 600;
 }
 
 h1 {
@@ -122,7 +127,7 @@ h1 {
   max-width: 800px;
   margin: 14px auto;
   padding:20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: var(--font-family1)
   font-style:italic;
   font-weight: 600;
   line-height: 3;
@@ -159,7 +164,7 @@ h1 {
   max-width: 800px;
   margin: 14px auto;
   padding:20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family1)
   font-style: italic;
   font-weight: 600;
   line-height: 3;
@@ -243,7 +248,7 @@ p {
   transition: 0.2s;
   width: 100vh;
   padding:20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family1)
   font-style: italic;
   font-weight: 600;
   color: var(--font-color2);
@@ -266,6 +271,7 @@ p {
   margin-bottom: -16vh;
   border-radius: 0px;
   color: var(--font-color4);
+  font-family: var(--font-family1);
   z-index: 5;
  }
 

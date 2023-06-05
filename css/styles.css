@@ -213,7 +213,7 @@ p {
   transition: 0.2s;
   width: 100vh;
   padding:20px;
-  font-family: var(--font-family1)
+  font-family: var(--font-family1);
   font-style: italic;
   font-weight: 600;
   color: var(--font-color2);

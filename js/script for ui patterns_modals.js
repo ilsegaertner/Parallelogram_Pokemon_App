@@ -1,11 +1,13 @@
 //script for UI Patterns 
 // modals
 
-function showModal() {
+(function () {
+
+function showModal(title,text) {
     let modalContainer = document.querySelector ('#modal-container');
 
     // Clear all existing modal content
-    modalContainer.innerHTML = '';
+    modalContainer.innerHTML = '';  //erases the entire contents of the #modalcontainer
 
     let modal = document.createElement('div');
     modal.classList.add('modal');
@@ -35,3 +37,7 @@ function showModal() {
 document.querySelector('#show-modal').addEventListener('click', () => {
     showModal ('Modal title', 'This is the modal content');
 });
+
+//The Return statement here
+
+})();

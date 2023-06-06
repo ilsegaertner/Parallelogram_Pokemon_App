@@ -98,7 +98,7 @@ let pokemonRepository = (function () {
   }
   });
 
-  document.querySelector('button-class').addEventListener('click', () => {
+  document.querySelector('.button-class').addEventListener('click', () => {
   showDetails(pokemon);
   });
                                                            

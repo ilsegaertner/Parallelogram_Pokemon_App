@@ -34,6 +34,7 @@
   --font-color4: #e6ffc4;
   --font-color5: #0028dd;
   --font-color6: #303022;
+  --font-color7: #ff0047;
   --accent: #b4ff50;
   --accent2: #d7ddff;
   --header: #8d8d8d;
@@ -90,7 +91,7 @@ h1 {
   /* padding: 20px;
   line-height: 0.7; */
   overflow: auto;
-  color: var(--font-color2);
+  color: var(--font-color6);
 }
 
 h1:hover {
@@ -143,7 +144,7 @@ button:hover {
 
   /* font-family: 'Courier New', Courier, monospace; */
   font-weight: 900;
-  font-size: 11px;
+  /*   */
   font-style: normal;
 }
 
@@ -313,7 +314,7 @@ footer {
 
 .modal h1 {
   text-align: center;
-  color: var(--font-color5);
+  color: var(--font-color7);
   font-family: var(--font-family1mulish_semibold);
   font-weight: 800;
   display: block;
@@ -322,7 +323,7 @@ footer {
 
 .modal p {
   margin-bottom: 0;
-  color: var(--font-color5);
+  color: var(--font-color7);
 }
 
 .pokemon-images {

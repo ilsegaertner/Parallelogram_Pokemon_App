@@ -25,7 +25,7 @@ let pokemonRepository = (function () {
     });
   }
 
-//new API functions loadList and loadDetails
+  //new API functions loadList and loadDetails
   function loadList() {
     return fetch(apiUrl).then(function (response) {
       return response.json();
@@ -53,11 +53,12 @@ let pokemonRepository = (function () {
       item.height = details.height;
       item.weight = details.weight;
       item.order = details.order;
-      item.types = details.types;
+      item.types = details.types.type.name;
     }).catch(function (e) {
       console.error(e);
     });
   }
+
 
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
@@ -80,34 +81,44 @@ let pokemonRepository = (function () {
       titleElement.innerText = pokemon.name;
     
       let contentElement = document.createElement('p');
-      contentElement.innerText = `Height: ${pokemon.height}, Weight: ${pokemon.weight}`;
+      contentElement.innerText = `Height: ${pokemon.height}, Weight: ${pokemon.weight}, Order: ${pokemon.order}, Types: ${pokemon.types}`;
+
+      let myImage = document.createElement('img');
+      myImage.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon';
+      modal.appendChild(myImage);
     
       modal.appendChild(closeButtonElement);
       modal.appendChild(titleElement);
       modal.appendChild(contentElement);
       modalContainer.appendChild(modal);
+      
     
       modalContainer.classList.add('is-visible');
  
-     
+      document.querySelector('.button-class').addEventListener('click', () => {
+        showDetails(pokemon);
+      });
+                                                                 
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+        hideModal();  
+         }
+      });
+
+      modalContainer.addEventListener('click', (e) => {
+        let target = e.target;
+        if (target === modalContainer) {
+          hideModal();
+        }
+      });
+
     })
-    };
+  }
     
   function hideModal() {
     modalContainer.classList.remove('is-visible');
   }
-  });
 
-  document.querySelector('.button-class').addEventListener('click', () => {
-  showDetails(pokemon);
-  });
-                                                           
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-    hideModal();  
-    }
-  });
-  
   return {
     getAll: getAll,
     add: add,
@@ -136,7 +147,7 @@ pokemonRepository.loadList().then(function() {
 
 
 
-/* _____________changing background color on click________________________ */
+/* _____________changing background color on click________________________ 
 
 var background = document.getElementById('background-color');
 background.addEventListener('click', changeColor, false);
@@ -150,3 +161,5 @@ function changeColor() {
     col.style.backgroundColor = colors[Math.floor((Math.random()*7)+1)];
 }
 changeColor();
+
+*/

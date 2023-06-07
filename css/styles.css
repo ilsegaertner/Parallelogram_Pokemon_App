@@ -75,12 +75,6 @@ body {
 
 }
 
-h1:hover {
-  cursor: pointer;
-  color: #580872;
-  font-style: normal;
-}
-
 header {
   background-color: var(--body-background-color-greypink);
   top: 0;
@@ -97,6 +91,14 @@ h1 {
   line-height: 0.7; */
   overflow: auto;
 }
+
+h1:hover {
+  cursor: pointer;
+  color: #580872;
+  font-style: normal;
+}
+
+/*__________BUTTONS_________*/
 
 .button-class {
   border-radius: 50vh;
@@ -177,7 +179,7 @@ li {
   /* background-color: #a1a01d2b; */
 }
 
-/*Marquee */
+/*________Marquee_________ */
 
 @keyframes marquee {
   0% {
@@ -188,6 +190,21 @@ li {
     text-indent: -200vh
   }
 }
+
+.marquee {
+  display: block;
+  padding: 1px;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  position: relative;
+  width: 100%;
+  margin-bottom: -16vh;
+  border-radius: 0px;
+  color: #b3b5c6;
+  font-family: var(--font-family1);
+  z-index: 5;
+}
+
 
 #background-color {
   background-color: #878787;
@@ -224,20 +241,6 @@ p {
   line-height: 1.4;
 }
 
-.marquee {
-  display: block;
-  padding: 1px;
-  white-space: nowrap;
-  animation: marquee 20s linear infinite;
-  position: relative;
-  width: 100%;
-  margin-bottom: -16vh;
-  border-radius: 0px;
-  color: #b3b5c6;
-  font-family: var(--font-family1);
-  z-index: 5;
-}
-
 footer {
   background-color: var(--footer3);
   display: inline;
@@ -248,91 +251,8 @@ footer {
   padding: 9px;
 }
 
-
-
-/* ____________ media queries ____________
-*/
-
-@media all and (max-width: 500px) {
-  #gradient {
-    /* border: 18px solid #e2dfdf;
-    border-radius: 50px; */
-  }
-
-  #body {
-    /* background-color: var(--body-background-color-lightgrey); */
-    /* background-color: #5d6864; */
-    padding: 15px;
-    border: 0px solid #cd9999;
-    margin-top: -155px;
-    max-width: 130vh;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .main-div {
-    /* max-width: 800px; */
-    line-height: 3;
-    /* background-color: #a1a01d2b; */
-    text-align: center;
-    border-radius: 40px;
-  }
-
-  header {
-    background-color: var(--body-background-color-greypink);
-    top: 0;
-    left: 0;
-    right: 0;
-    position: sticky;
-    cursor: pointer;
-    font-family: var(--font-family1mulish_semibold);
-    line-height: 1.2;
-    font-size: 0.6rem;
-    color: var(--font-color5);
-  }
-
-  .modal p {
-    margin-bottom: 0;
-    color: var(--font-color5);
-    font-size: 1.2rem;
-  }
-
-  .modal h1 {
-   text-align: center;
-    font-size: 1.5rem;
-    color: var(--font-color5);
-    font-family: var(--font-family1mulish_semibold);
-    font-weight: 800;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  #gradient {
-    /* border: 18px solid #e2dfdf;
-    border-radius: 50px; */
-    background-color: none;
-  }
-
-  .modal p {
-    margin-bottom: 0;
-    color: var(--font-color5);
-    font-size: 1.2rem;
-  }
-
-  .modal h1 {
-    margin-top: 0;
-    text-align: center;
-    font-size: 2rem;
-    color: var(--font-color5);
-    font-family: var(--font-family1mulish_semibold);
-    font-weight: 800;
-  }
-}
-
-@media all and (max-width: 750px) {
-}
-
-/* CSS for Modals */
+/*_______________CSS for Modal __________________________________
+ */
 
 #modal-container {
   display: none;
@@ -413,4 +333,87 @@ footer {
     width: 50%;
     max-width: 50%;
     display: block;
+}
+
+
+/* ____________ media queries ______________________________________________________
+*/
+
+@media all and (max-width: 500px) {
+  #gradient {
+    /* border: 18px solid #e2dfdf;
+    border-radius: 50px; */
+  }
+
+  #body {
+    /* background-color: var(--body-background-color-lightgrey); */
+    /* background-color: #5d6864; */
+    padding: 15px;
+    border: 0px solid #cd9999;
+    margin-top: -155px;
+    max-width: 130vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-div {
+    /* max-width: 800px; */
+    line-height: 3;
+    /* background-color: #a1a01d2b; */
+    text-align: center;
+    border-radius: 40px;
+  }
+
+  header {
+    background-color: var(--body-background-color-greypink);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    cursor: pointer;
+    font-family: var(--font-family1mulish_semibold);
+    line-height: 1.2;
+    font-size: 0.6rem;
+    color: var(--font-color5);
+  }
+
+  .modal p {
+    margin-bottom: 0;
+    color: var(--font-color5);
+    font-size: 1.2rem;
+  }
+
+  .modal h1 {
+   text-align: center;
+    font-size: 1.5rem;
+    color: var(--font-color5);
+    font-family: var(--font-family1mulish_semibold);
+    font-weight: 800;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  #gradient {
+    /* border: 18px solid #e2dfdf;
+    border-radius: 50px; */
+    background-color: none;
+  }
+
+  .modal p {
+    margin-bottom: 0;
+    color: var(--font-color5);
+    font-size: 1.2rem;
+  }
+
+  .modal h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--font-color5);
+    font-family: var(--font-family1mulish_semibold);
+    font-weight: 800;
+  }
+}
+
+@media all and (max-width: 750px) {
 }

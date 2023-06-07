@@ -32,6 +32,8 @@
   --font-color2: #2e0046;
   --font-color3: #f5ff649c;
   --font-color4: #e6ffc4;
+  --font-color5: #0028dd;
+  --font-color6: #303022;
   --accent: #b4ff50;
   --accent2: #d7ddff;
   --header: #8d8d8d;
@@ -100,6 +102,12 @@ header {
   cursor: pointer;
   /* color:var(--accent2); */
   font-family: var(--font-family1mulish_semibold);
+}
+
+.pokemon-images {
+  margin: -181px;
+    max-width: 100%;
+    width: 339px;
 }
 
 h1 {
@@ -222,9 +230,8 @@ li {
 p {
   transition: 0.2s;
   /* width: 100vh; */
-  padding: 20px;
+  padding: 58px;
   font-family: var(--font-family1);
-  font-style: italic;
   font-weight: 600;
   color: var(--font-color2);
   /* color: #2a2d9b; */
@@ -326,6 +333,7 @@ footer {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  font-family: var(--font-family1);
 
   /* to show it above other content */
   z-index: 999;
@@ -348,6 +356,8 @@ footer {
   max-width: 700px;
   text-align: left;
   border-radius: 20px;
+  color: #000;
+  font-size: 2rem;
 }
 
 .modal-close {
@@ -355,14 +365,26 @@ footer {
   -webkit-appearance: none;
   border: 0;
   background: none;
-  color: #777;
+  color: #341228;
   text-decoration: underline;
+  font-family: var(--font-family1);
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
 }
+
 
 .modal h1 {
   margin-top: 0;
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--font-color5);
+  font-family: var(--font-family1mulish_semibold);
+  font-weight: 800;
 }
 
 .modal p {
   margin-bottom: 0;
+  color: var(--font-color5);
+  font-size: 1.4rem;
 }

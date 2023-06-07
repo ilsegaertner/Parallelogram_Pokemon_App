@@ -45,16 +45,19 @@ let pokemonRepository = (function () {
 
   function loadDetails(item) {
     let url = item.detailsUrl;
-    return fetch(url).then(function (response) {
+    return fetch(url)
+    .then(function (response) {
       return response.json();
-    }).then(function (details) {
+    })
+    .then(function (details) {
       // Now we add the details to the item
       item.imageUrl = details.sprites.front_default;
       item.height = details.height;
       item.weight = details.weight;
       item.order = details.order;
       item.types = details.types.type.name;
-    }).catch(function (e) {
+    })
+    .catch(function (e) {
       console.error(e);
     });
   }
@@ -81,10 +84,12 @@ let pokemonRepository = (function () {
       titleElement.innerText = pokemon.name;
     
       let contentElement = document.createElement('p');
-      contentElement.innerText = `Height: ${pokemon.height}, Weight: ${pokemon.weight}, Order: ${pokemon.order}, Types: ${pokemon.types}`;
+      contentElement.classList.add('modal-p');
+      contentElement.innerText = `Height: ${pokemon.height}, Weight: ${pokemon.weight}, Order: ${pokemon.order}`;
 
       let myImage = document.createElement('img');
-      myImage.src = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon';
+      myImage.classList.add('pokemon-images');
+      myImage.src = pokemon.imageUrl;
       modal.appendChild(myImage);
     
       modal.appendChild(closeButtonElement);

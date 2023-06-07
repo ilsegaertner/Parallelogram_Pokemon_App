@@ -90,6 +90,7 @@ h1 {
   /* padding: 20px;
   line-height: 0.7; */
   overflow: auto;
+  color: var(--font-color2);
 }
 
 h1:hover {

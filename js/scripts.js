@@ -87,14 +87,18 @@ let pokemonRepository = (function () {
       contentElement.classList.add('modal-p');
       contentElement.innerText = `Height: ${pokemon.height}, Weight: ${pokemon.weight}, Order: ${pokemon.order}`;
 
-      let myImage = document.createElement('img');
-      myImage.classList.add('pokemon-images');
-      myImage.src = pokemon.imageUrl;
-      modal.appendChild(myImage);
+      
     
       modal.appendChild(closeButtonElement);
       modal.appendChild(titleElement);
       modal.appendChild(contentElement);
+
+      let myImage = document.createElement('img');
+      myImage.classList.add('pokemon-images');
+      myImage.src = pokemon.imageUrl;
+      modal.appendChild(myImage);
+      
+
       modalContainer.appendChild(modal);
       
     

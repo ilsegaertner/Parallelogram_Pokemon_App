@@ -483,6 +483,11 @@ footer {
   display: inline;
 }
 
+button.modal-close {
+  border-radius: 1vh;
+  font-family: var(--font-family2);
+  font-weight: 400;
+}
 
 .modal h1 {
   text-align: center;

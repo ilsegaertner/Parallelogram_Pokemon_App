@@ -45,6 +45,7 @@
   --footer3: #000000;
   --font-family1: 'Mulish', sans-serif;
   --font-family1mulish_semibold: 'Mulish', sans-serif;
+  --font-family2: 'Helvetica';
   --background-opaque1:#00000080;
   --background-opaque2:#0403157d;
 }
@@ -92,7 +93,7 @@ header {
   position: sticky;
   cursor: pointer;
   /* color:var(--accent2); */
-  font-family: var(--font-family1mulish_semibold);
+  font-family: var(--font-family2);
 }
 
 h1 {
@@ -103,15 +104,20 @@ h1 {
 }
 
 .button-class {
-  border-radius: 50vh;
+  border-radius: 4vh;
   box-shadow: var(--box-shadow-buttons1);
   padding: 12px;
   font-family: var(--font-family1);
   font-weight: 400;
-  line-height: 3.5;
+  line-height: 3.8;
   color: var(--font-color2);
   /* color: #2a2d9b; */
   background-color: var(--button-color4);
+  /* background: rgb(75,239,163);
+  background: -moz-linear-gradient(61deg, rgba(75,239,163,1) 0%, rgba(62,187,129,1) 100%);
+  background: -webkit-linear-gradient(61deg, rgba(75,239,163,1) 0%, rgba(62,187,129,1) 100%);
+  background: linear-gradient(61deg, rgba(75,239,163,1) 0%, rgba(62,187,129,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4befa3",endColorstr="#3ebb81",GradientType=1); */
 }
 
 .button-class:hover {
@@ -289,7 +295,7 @@ footer {
     right: 0;
     position: sticky;
     cursor: pointer;
-    font-family: var(--font-family1mulish_semibold);
+    font-family: var(--font-family2);
     line-height: 1.2;
     font-size: 0.6rem;
     color: var(--font-color5);
@@ -305,7 +311,7 @@ footer {
    text-align: center;
     font-size: 1.5rem;
     color: var(--font-color5);
-    font-family: var(--font-family1mulish_semibold);
+    font-family: var(--font-family2);
     font-weight: 800;
   }
 }
@@ -328,7 +334,7 @@ footer {
     text-align: center;
     font-size: 2rem;
     color: var(--font-color5);
-    font-family: var(--font-family1mulish_semibold);
+    font-family: var(--font-family2);
     font-weight: 800;
   }
 }
@@ -362,6 +368,7 @@ footer {
   /* this is used to center the modal */
   display: grid;
   text-align: center;
+  border: 7px solid #0028dd1f;
 }
 
 .modal {
@@ -397,7 +404,7 @@ footer {
 .modal h1 {
   text-align: center;
   color: var(--font-color5);
-  font-family: var(--font-family1mulish_semibold);
+  font-family: var(--font-family2);
   font-weight: 800;
   display: block;
   margin: 50px;
@@ -406,6 +413,8 @@ footer {
 .modal p {
   margin-bottom: 0;
   color: var(--font-color5);
+  z-index: 998;
+  margin-left: -20px;
 }
 
 .pokemon-images {

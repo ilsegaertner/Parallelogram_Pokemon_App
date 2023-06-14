@@ -277,6 +277,20 @@ footer {
   padding: 9px;
 }
 
+.list-group-item {
+  background-color: #87878700;
+  border:none;
+}
+
+.btn-primary {
+  border-color: var(--body-background-color-lightgrey);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: var(--dark);
+  background-color: var(--body-background-color-greypink);
+  border-color: var(--font-color7);
+}
 /*_______________CSS for Modal __________________________________
  
 

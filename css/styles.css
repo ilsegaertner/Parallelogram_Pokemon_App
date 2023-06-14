@@ -13,6 +13,9 @@
   --box-shadow-buttons1: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   --box-shadow-buttons2: inset 0 -3em 3em rgb(88 145 225 / 20%), 0 2em 7em 5px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(10000, 0, 0, 0.3);
+  --box-shadow-buttons3: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .4px rgb(255, 255, 255), 0.2em 0.2em .7em rgba(0, 0, 0, 0.2);
+  --box-shadow-buttons4: inset 0 -2em 1em rgb(88 145 225 / 10%), 0 -12em 29em 1px rgb(255, 255, 255), 0.2em 0em 1em rgba(10000, 0, 0, 0.2);
+  --box-shadow-buttons5: inset 0 -2em 0em rgb(88 145 225 / 5%), 0 -17em 29em 1px rgb(255, 255, 255), -8.8em 0em 4em rgba(10000, 0, 0, 5);
   --button-hover1: #f1dfae5e;
   --button-hover2: #e04a8b4f;
   --button-color1: #ff0083b0;
@@ -43,11 +46,14 @@
   --footer: #494949;
   --footer2: #0f1032;
   --footer3: #000000;
+  --footer4:#8b7a7a;
+  --footer5:#797474;
   --font-family1: 'Mulish', sans-serif;
   --font-family1mulish_semibold: 'Mulish', sans-serif;
   --font-family2: 'Helvetica';
   --background-opaque1:#00000080;
   --background-opaque2:#0403157d;
+  --background-opaque3:#120b7f7d;
 }
 
 body {
@@ -68,7 +74,7 @@ body {
   padding: 15px;
   border: 0px solid #cd9999;
   margin-top: -105px;
-  max-width: 80%;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -79,21 +85,22 @@ body {
 
 }
 
-h1:hover {
-  cursor: pointer;
-  color: #580872; 
-  font-style: normal;
-}
 
 header {
-  background-color: var(--body-background-color-greypink);
+  /* background-color: var(--body-background-color-greypink); */
+  background-color: var(--font-color1);
   top: 0;
   left: 0;
   right: 0;
   position: sticky;
   cursor: pointer;
   /* color:var(--accent2); */
-  font-family: var(--font-family2);
+  padding:3px;
+  font-family: var(--font-family1);
+  font-weight: 300;
+  box-shadow: var(--box-shadow-buttons5);
+  border-radius: 132px;
+  font-size: 16px;
 }
 
 h1 {
@@ -103,22 +110,24 @@ h1 {
   text-decoration: ;
 }
 
-h1:hover {
+/* h1:hover {
   cursor: pointer;
-  color: #580872;
+  /* color: #580872; 
+  color:#0028dd;
   font-style: normal;
-}
+} */
 
 /*__________BUTTONS_________*/
 
 .button-class {
   border-radius: 4vh;
-  box-shadow: var(--box-shadow-buttons1);
+  box-shadow: var(--box-shadow-buttons3);
   padding: 12px;
   font-family: var(--font-family1);
   font-weight: 400;
   line-height: 3.8;
   color: var(--font-color2);
+  font-size: 16px;
   /* color: #2a2d9b; */
   background-color: var(--button-color4);
   /* background: rgb(75,239,163);
@@ -139,11 +148,11 @@ h1:hover {
   font-size: 11px;
   font-style: normal;
 }
-
+/* 
 button:hover {
   background-color: var(--button-hover2);
   color: black;
-}
+} */
 
 .button-class:focus {
   background-color: var(--button-hover2);
@@ -211,10 +220,11 @@ li {
   display: block;
   padding: 1px;
   white-space: nowrap;
-  animation: marquee 20s linear infinite;
+  animation: marquee 7s linear infinite;
   position: relative;
   width: 100%;
-  margin-bottom: -16vh;
+  /* margin-bottom: -16vh; */
+  margin-bottom: 11vh;
   border-radius: 0px;
   color: #b3b5c6;
   font-family: var(--font-family1);
@@ -258,7 +268,7 @@ p {
 }
 
 footer {
-  background-color: var(--footer3);
+  background-color: var(--footer4);
   display: inline;
   bottom: 0;
   left: 0;
@@ -372,16 +382,21 @@ footer {
   }
 
   header {
-    background-color: var(--body-background-color-greypink);
+    /* background-color: var(--body-background-color-greypink); */
+    background-color: var(--font-color1);
     top: 0;
     left: 0;
     right: 0;
     position: sticky;
     cursor: pointer;
-    font-family: var(--font-family2);
+    font-family: var(--font-family1);
     line-height: 1.2;
     font-size: 0.6rem;
     color: var(--font-color5);
+  }
+
+  .button-class {
+    font-size: 0.8rem;
   }
 
   .modal p {
@@ -394,7 +409,7 @@ footer {
    text-align: center;
     font-size: 1.5rem;
     color: var(--font-color5);
-    font-family: var(--font-family2);
+    font-family: var(--font-family1);
     font-weight: 800;
   }
 }
@@ -417,7 +432,7 @@ footer {
     text-align: center;
     font-size: 2rem;
     color: var(--font-color5);
-    font-family: var(--font-family2);
+    font-family: var(--font-family1);
     font-weight: 800;
   }
 }
@@ -439,7 +454,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--background-opaque2);
+  background: var(--background-opaque3);
   font-family: var(--font-family1);
 
   /* to show it above other content */
@@ -485,14 +500,14 @@ footer {
 
 button.modal-close {
   border-radius: 1vh;
-  font-family: var(--font-family2);
+  font-family: var(--font-family1);
   font-weight: 400;
 }
 
 .modal h1 {
   text-align: center;
   color: var(--font-color5);
-  font-family: var(--font-family2);
+  font-family: var(--font-family1);
   font-weight: 800;
   display: block;
   margin: 50px;

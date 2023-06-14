@@ -66,7 +66,6 @@ let pokemonRepository = (function () {
     });
   }
 
-
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
       
@@ -155,24 +154,3 @@ pokemonRepository.loadList().then(function() {
     pokemonRepository.addListItem(pokemon);
   });
 });
-
-
-
-
-
-/* _____________changing background color on click________________________ 
-
-var background = document.getElementById('background-color');
-background.addEventListener('click', changeColor, false);
-background.addEventListener('dblclick', changeColor, false);
-
-// var colors = ["#2a2d9b", "#f1dfae5e", "#efeed8", "#81801e", "#a1a01d2b", "#8d8d8d", "#2a2d9b", "#d1d1d1"];
-var colors = ["#cdcccc", "#a7a7a7", "#afafaf", "#878787", "#2c2c2c", "#d7d7d7", "#ebebeb", "#a1a1a1"];
-
-function changeColor() {
-    var col = document.getElementById("background-color");
-    col.style.backgroundColor = colors[Math.floor((Math.random()*7)+1)];
-}
-changeColor();
-
-*/

@@ -106,7 +106,7 @@ header {
 h1 {
   /* padding: 20px;
   line-height: 0.7; */
-  overflow: auto;
+  overflow: hidden;
   text-decoration: ;
 }
 
@@ -456,6 +456,11 @@ footer {
 
 /* CSS for Modals */
 
+
+
+
+
+
 #modal-container {
   display: none;
 }
@@ -470,14 +475,8 @@ footer {
   height: 100%;
   background: var(--background-opaque3);
   font-family: var(--font-family1);
-
-  /* to show it above other content */
   z-index: 999;
-
-  /* to allow scrolling if the screen is not high enough*/
   overflow: auto;
-
-  /* this is used to center the modal */
   display: grid;
   text-align: center;
   border: 7px solid #0028dd1f;
@@ -540,3 +539,4 @@ button.modal-close {
     max-width: 50%;
     display: block;
 }
+

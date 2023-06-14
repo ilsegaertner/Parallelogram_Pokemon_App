@@ -162,8 +162,8 @@ let pokemonRepository = (function () {
       */
 
       // document.querySelector('.button-class').addEventListener('click', () => {
-      //   showDetails(pokemon);
-      // });
+      //    showDetails(pokemon);
+      //  });
 
     });
   }

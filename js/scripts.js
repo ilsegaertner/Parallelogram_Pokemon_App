@@ -18,13 +18,14 @@ let pokemonRepository = (function () {
     let button = document.createElement('button');
     ulList.classList.add('list-group');
     listpokemon.classList.add('list-group-item');
+    listpokemon.setAttribute("data-bs-toggle", "modal");
+    listpokemon.setAttribute("data-bs-target", "#exampleModal");
     button.innerText = pokemon.name; 
     button.classList.add('button-class');
-    button.classList.add('btn');
+    button.classList.add('btn');;
     button.setAttribute("data-bs-toggle", "modal");
-    button.setAttribute("data-bs-target", "#myModal");
+    button.setAttribute("data-bs-target", "#exampleModal");
     ulList.appendChild(button);
-    // button.classList.add('btn-primary');
     listpokemon.appendChild(button);
     ulList.appendChild(listpokemon); 
     button.addEventListener('click', function(event){

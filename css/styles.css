@@ -63,14 +63,14 @@ body {
   border-radius: 40px;
 }
 
-.body {
+#body {
   margin-top: -105px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.body:hover {
+#body:hover {
   color: #000000;
   cursor: pointer;
 
@@ -87,8 +87,7 @@ header {
 }
 
 h1 {
-  /* padding: 20px;
-  line-height: 0.7; */
+
   overflow: auto;
 }
 
@@ -186,7 +185,7 @@ li {
   z-index: 5;
 }
 
-.background-color {
+#background-color {
   background-color:#fffafa;
   position: relative;
   border-radius: 50px;

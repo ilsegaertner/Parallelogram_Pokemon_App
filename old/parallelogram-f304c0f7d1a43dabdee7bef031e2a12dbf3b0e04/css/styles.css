@@ -1,0 +1,421 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --box-shadow-right1: #3102e142;
+  --box-shadow-right2: #e275fd;
+  --box-shadow-right3: #8d9d9f9e;
+  --box-shadow-left1: #b4ff5036;
+  --box-shadow-left2: #fcff43b3;
+  --box-shadow-left3: #4c4c2e66;
+  --box-shadow-buttons1: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  --box-shadow-buttons2: inset 0 -3em 3em rgb(88 145 225 / 20%), 0 2em 7em 5px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(10000, 0, 0, 0.3);
+  --button-hover1: #f1dfae5e;
+  --button-hover2: #e04a8b4f;
+  --button-color1: #ff0083b0;
+  --button-color2: #b4ff50;
+  --button-color3: #d7ff44;
+  --button-color4: #4befa366;
+  --button-color3lessopacity:#d7ff447e;
+  --button-color3lessopacity2:#d7ff44c4; 
+  --body-background-color-darkblue: #0f1032;
+  --body-background-color-greypink: #877e85;
+  --body-background-color-greygreen: #5d6864;
+  --body-background-color-blue: #3102e1;
+  --body-background-color-lightgrey: #a1a1a1;
+  --body-background-color-lightgrey2: #95868c;
+  --body-background-color-pink: #cd999961;
+  --font-color1: #ff0000;
+  --font-color2: #2e0046;
+  --font-color3: #f5ff649c;
+  --font-color4: #e6ffc4;
+  --font-color5: #0028dd;
+  --font-color6: #303022;
+  --font-color7: #ff0047;
+  --accent: #b4ff50;
+  --accent2: #d7ddff;
+  --header: #8d8d8d;
+  --header2: #509fff;
+  --header3: #8d9d9f;
+  --footer: #494949;
+  --footer2: #0f1032;
+  --footer3: #000000;
+  --font-family1: 'Mulish', sans-serif;
+  --font-family1mulish_semibold: 'Mulish', sans-serif;
+}
+
+body {
+  /* background-color: #e2dfdf; */
+  background-color: var(--body-background-color-lightgrey2);
+}
+
+.main-div {
+  /* max-width: 800px; */
+  /* background-color: #a1a01d2b; */
+  text-align: center;
+  border-radius: 40px;
+}
+
+#body {
+  /* background-color: var(--body-background-color-lightgrey); */
+  /* background-color: #5d6864; */
+  padding: 15px;
+  border: 0px solid #cd9999;
+  margin-top: -105px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#body:hover {
+  color: #000000;
+  cursor: pointer;
+
+}
+
+header {
+  background-color: var(--body-background-color-greypink);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: sticky;
+  cursor: pointer;
+  /* color:var(--accent2); */
+  font-family: var(--font-family1mulish_semibold);
+}
+
+h1 {
+  /* padding: 20px;
+  line-height: 0.7; */
+  overflow: auto;
+  color: var(--font-color6);
+}
+
+h1:hover {
+  cursor: pointer;
+  color: #580872;
+  font-style: normal;
+}
+
+/*__________BUTTONS_________*/
+
+.button-class {
+  border-radius: 50vh;
+  box-shadow: var(--box-shadow-buttons1);
+  padding: 12px;
+  font-family: var(--font-family1);
+  font-weight: 400;
+  line-height: 3.5;
+  color: var(--font-color2);
+  /* color: #2a2d9b; */
+  background-color: var(--button-color4);
+}
+
+.button-class:hover {
+  cursor: pointer;
+}
+
+.button-class:visited {
+  color: var(--font-color4);
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 900;
+  font-size: 11px;
+  font-style: normal;
+}
+
+button:hover {
+  background-color: var(--button-hover2);
+  color: black;
+}
+
+.button-class:focus {
+  background-color: var(--button-hover2);
+  color: var(--button-color3lessopacity);
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 900;
+  font-style: italic;
+}
+
+.button-class:active {
+  color: var(--button-color3lessopacity2);
+
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 900;
+  /*   */
+  font-style: normal;
+}
+
+.all-pokes {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 14px auto;
+  padding: 20px;
+}
+
+li {
+  flex-basis: auto;
+  flex-shrink: 5;
+  /* background-color: #f1dfae5e; */
+  /* background-color: #e2e1b9; */
+  border-top-width: 0px;
+  border-top-style: solid;
+  border-right-width: 0px;
+  border-right-style: solid;
+  border-left-width: 0px;
+  border-left-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+  list-style-type: none;
+  margin: 14px auto;
+  padding: 20px;
+  font-family: var(--font-family1);
+  font-weight: 200;
+  /* background-color: #a1a01d2b; */
+}
+
+/*________Marquee_________ */
+
+@keyframes marquee {
+  0% {
+    text-indent: 200vh
+  }
+
+  100% {
+    text-indent: -200vh
+  }
+}
+
+.marquee {
+  display: block;
+  padding: 1px;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+  position: relative;
+  width: 100%;
+  margin-bottom: -16vh;
+  border-radius: 0px;
+  color: #b3b5c6;
+  font-family: var(--font-family1);
+  z-index: 5;
+}
+
+
+#background-color {
+  background-color: #878787;
+  transition: background-color 0.1s;
+  position: relative;
+  border-radius: 50px;
+  /* max-width: 900px; */
+  margin: 160px auto;
+  box-shadow: inset -0.1em 0.1em 0.5em var(--box-shadow-right1),
+    inset 0.1em 0.1em 0.6em var(--box-shadow-left1);
+}
+
+.about-picture {
+  display: grid;
+  max-width: 269px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+p {
+  transition: 0.2s;
+  /* width: 100vh; */
+  padding: 58px;
+  font-family: var(--font-family1);
+  font-weight: 600;
+  color: var(--font-color2);
+  /* color: #2a2d9b; */
+  /* background-color: #a1a01d2b; */
+  text-align: center;
+  /* overflow: hidden; */
+  border-radius: 40px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  line-height: 1.4;
+}
+
+footer {
+  background-color: var(--footer3);
+  display: inline;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  padding: 9px;
+}
+
+/*_______________CSS for Modal __________________________________
+ */
+
+#modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
+  position: fixed;
+  padding: 60px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: var(--font-family1);
+
+  /* to show it above other content */
+  z-index: 999;
+
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto;
+
+  /* this is used to center the modal */
+  display: grid;
+  text-align: center;
+}
+
+.modal {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: var(--button-color3);
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 20px;
+  color: #000;
+  font-size: 1.5rem;
+  overflow: auto;
+}
+
+.modal-close {
+  float: right;
+  -webkit-appearance: none;
+  border: 0;
+  background: none;
+  color: #341228;
+  text-decoration: underline;
+  font-family: var(--font-family1);
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  display: inline;
+}
+
+
+.modal h1 {
+  text-align: center;
+  color: var(--font-color7);
+  font-family: var(--font-family1mulish_semibold);
+  font-weight: 800;
+  display: block;
+  margin: 50px;
+}
+
+.modal p {
+  margin-bottom: 0;
+  color: var(--font-color7);
+}
+
+.pokemon-images {
+  /* margin: -181px;
+    max-width: 100%;
+    width: 339px; */
+
+    margin:-119px -32px 16px 165px;
+    width: 50%;
+    max-width: 50%;
+    display: block;
+}
+
+
+/* ____________ media queries ______________________________________________________
+*/
+
+@media all and (max-width: 500px) {
+  #gradient {
+    /* border: 18px solid #e2dfdf;
+    border-radius: 50px; */
+  }
+
+  #body {
+    /* background-color: var(--body-background-color-lightgrey); */
+    /* background-color: #5d6864; */
+    padding: 15px;
+    border: 0px solid #cd9999;
+    margin-top: -155px;
+    max-width: 130vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-div {
+    /* max-width: 800px; */
+    line-height: 3;
+    /* background-color: #a1a01d2b; */
+    text-align: center;
+    border-radius: 40px;
+  }
+
+  header {
+    background-color: var(--body-background-color-greypink);
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    cursor: pointer;
+    font-family: var(--font-family1mulish_semibold);
+    line-height: 1.2;
+    font-size: 0.6rem;
+    color: var(--font-color5);
+  }
+
+  .modal p {
+    margin-bottom: 0;
+    color: var(--font-color5);
+    font-size: 1.2rem;
+  }
+
+  .modal h1 {
+   text-align: center;
+    font-size: 1.5rem;
+    color: var(--font-color5);
+    font-family: var(--font-family1mulish_semibold);
+    font-weight: 800;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  #gradient {
+    /* border: 18px solid #e2dfdf;
+    border-radius: 50px; */
+    background-color: none;
+  }
+
+  .modal p {
+    margin-bottom: 0;
+    color: var(--font-color5);
+    font-size: 1.2rem;
+  }
+
+  .modal h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--font-color5);
+    font-family: var(--font-family1mulish_semibold);
+    font-weight: 800;
+  }
+}
+
+@media all and (max-width: 750px) {
+}

@@ -374,8 +374,8 @@ button.modal-close {
     display: block;
 }
 
-/* 
- Modal from Bootstrap 
+
+/* Modal from Bootstrap  */
 
 .modal-header, .modal-body, .modal-footer {
 background: #ff0000;
@@ -383,7 +383,7 @@ background: #ff0000;
 
 .navbar-brand {
   color:rgb(3 10 67 / 90%);
-} */
+}
 
 .modal-header {
   border-top-right-radius: 28.3rem;

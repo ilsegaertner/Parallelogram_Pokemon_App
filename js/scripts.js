@@ -74,7 +74,7 @@ let pokemonRepository = (function () {
       modalBody.empty();
 
       let nameElement = $("<h1>" + pokemon.name + "<h1>");
-      let imageElementFront = $('<img class="modal-img" style="width:80%">');
+      let imageElementFront = $('<img class="modal-img" style="width:60%">');
       imageElementFront.attr("src", pokemon.imageUrl);
       let heightElement = $("<p>" + "height : " + pokemon.height + "</p>");
       let weightElement = $("<p>" + "weight : " + pokemon.weight + "</p>"); 
@@ -105,6 +105,26 @@ function loopPokemon(pokemon) {
 }
 let pokemonList = pokemonRepository.getAll();
 pokemonList.forEach(loopPokemon);
+
+// function myFunction() {
+//   // Declare variables
+//   var input, filter, ul, li, a, i, txtValue;
+//   input = document.getElementById('myInput');
+//   filter = input.value.toUpperCase();
+//   ul = document.getElementById("myUL");
+//   li = ul.getElementsByTagName('li');
+
+//   // Loop through all list items, and hide those who don't match the search query
+//   for (i = 0; i < li.length; i++) {
+//     a = li[i].getElementsByTagName("a")[0];
+//     txtValue = a.textContent || a.innerText;
+//     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//       li[i].style.display = "";
+//     } else {
+//       li[i].style.display = "none";
+//     }
+//   }
+// }
 
 //new loadList
 pokemonRepository.loadList().then(function() {

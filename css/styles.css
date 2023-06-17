@@ -336,7 +336,7 @@ footer {
   text-align: center;
 }
 
-.modal {
+/* .modal {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
@@ -350,7 +350,7 @@ footer {
   font-size: 1.5rem;
   overflow: auto;
   text-align: center;
-} 
+}  */
 
 .modal-close {
   float: right;

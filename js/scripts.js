@@ -2,7 +2,7 @@ let pokemonRepository = (function () {
   
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
-  // let modalContainer = document.querySelector('#modal-container');
+  let modalContainer = document.querySelector('#modal-container');
 
   function getAll() {
     return pokemonList;
@@ -16,16 +16,11 @@ let pokemonRepository = (function () {
     let ulList = document.querySelector('.all-pokes');
     let listpokemon = document.createElement('li');
     let button = document.createElement('button');
-    ulList.classList.add('list-group');
-    listpokemon.classList.add('list-group-item');
-    listpokemon.setAttribute("data-bs-toggle", "modal");
-    listpokemon.setAttribute("data-bs-target", "#exampleModal");
     button.innerText = pokemon.name; 
-    button.classList.add('button-class');
-    button.classList.add('btn');;
-    button.setAttribute("data-bs-toggle", "modal");
-    button.setAttribute("data-bs-target", "#exampleModal");
-    ulList.appendChild(button);
+    button.classList.add('btn');
+    button.setAttribute("data-toggle", "modal");
+    button.setAttribute("data-target", "#exampleModal");
+    listpokemon.classList.add('list-group-item');
     listpokemon.appendChild(button);
     ulList.appendChild(listpokemon); 
     button.addEventListener('click', function(event){

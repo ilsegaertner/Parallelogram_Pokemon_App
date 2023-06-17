@@ -94,7 +94,7 @@ h1:hover {
 
 /*__________BUTTONS_________*/
 
-.button-class {
+/* .button-class {
   border-radius: 50vh;
   box-shadow: var(--box-shadow-buttons1);
   padding: 12px;
@@ -103,9 +103,9 @@ h1:hover {
   line-height: 3.5;
   color: var(--font-color2);
   background-color: var(--button-color4);
-}
+} */
 
-.button-class:hover {
+/* .button-class:hover {
   cursor: pointer;
 }
 
@@ -132,7 +132,7 @@ button:hover {
   color: var(--button-color3lessopacity2);
   font-weight: 900;
   font-style: normal;
-}
+} */
 
 .all-pokes {
   display: flex;

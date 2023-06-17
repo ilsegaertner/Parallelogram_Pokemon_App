@@ -15,7 +15,7 @@ let pokemonRepository = (function () {
   function addListItem(pokemon) {
     let ulList = document.querySelector('.all-pokes');
     let listpokemon = document.createElement('li');
-    let button = document.createElement('button');
+    let button = document.createElement('button')
     button.innerText = pokemon.name; 
     button.classList.add('btn');
     button.setAttribute("data-toggle", "modal");
@@ -65,10 +65,9 @@ let pokemonRepository = (function () {
     });
   }
 
+
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
-      
-      new Bootstrap Modal
 
       let modalBody = $(".modal-body");
       let modalTitle = $(".modal-title");
@@ -77,9 +76,7 @@ let pokemonRepository = (function () {
       modalTitle.empty();
       modalBody.empty();
 
-     
       let nameElement = $("<h1>" + pokemon.name + "<h1>");
-
       let imageElementFront = $('<img class="modal-img" style="width:80%">');
       imageElementFront.attr("src", pokemon.imageUrl);
       let heightElement = $("<p>" + "height : " + pokemon.height + "</p>");
@@ -92,7 +89,8 @@ let pokemonRepository = (function () {
       modalBody.append(weightElement);
       modalBody.append(orderElement);
 
-
+      
+      // _________________________inserted modal function
       
       // modalContainer.innerHTML = '';
     
@@ -111,6 +109,7 @@ let pokemonRepository = (function () {
       // contentElement.classList.add('modal-p');
       // contentElement.innerText = `Height: ${pokemon.height}, Weight: ${pokemon.weight}, Order: ${pokemon.order}`;
 
+      
     
       // modal.appendChild(closeButtonElement);
       // modal.appendChild(titleElement);
@@ -144,11 +143,7 @@ let pokemonRepository = (function () {
       //   }
       // });
 
-      // document.querySelector('.button-class').addEventListener('click', () => {
-      //    showDetails(pokemon);
-      //  });
-
-    });
+    })
   }
     
   // function hideModal() {
@@ -178,3 +173,24 @@ pokemonRepository.loadList().then(function() {
     pokemonRepository.addListItem(pokemon);
   });
 });
+
+
+
+
+
+/* _____________changing background color on click________________________ 
+
+var background = document.getElementById('background-color');
+background.addEventListener('click', changeColor, false);
+background.addEventListener('dblclick', changeColor, false);
+
+// var colors = ["#2a2d9b", "#f1dfae5e", "#efeed8", "#81801e", "#a1a01d2b", "#8d8d8d", "#2a2d9b", "#d1d1d1"];
+var colors = ["#cdcccc", "#a7a7a7", "#afafaf", "#878787", "#2c2c2c", "#d7d7d7", "#ebebeb", "#a1a1a1"];
+
+function changeColor() {
+    var col = document.getElementById("background-color");
+    col.style.backgroundColor = colors[Math.floor((Math.random()*7)+1)];
+}
+changeColor();
+
+*/

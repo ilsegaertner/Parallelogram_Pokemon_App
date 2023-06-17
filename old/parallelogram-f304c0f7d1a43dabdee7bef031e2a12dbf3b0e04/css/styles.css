@@ -1,4 +1,4 @@
-  * {
+* {;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -12,9 +12,6 @@
   --box-shadow-buttons1: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   --box-shadow-buttons2: inset 0 -3em 3em rgb(88 145 225 / 20%), 0 2em 7em 5px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(10000, 0, 0, 0.3);
-  --box-shadow-buttons3: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .4px rgb(255, 255, 255), 0.2em 0.2em .7em rgba(0, 0, 0, 0.2);
-  --box-shadow-buttons4: inset 0 -2em 1em rgb(88 145 225 / 10%), 0 -6em 29em 1px rgb(255, 255, 255), 0.2em 0em 1em rgba(10000, 0, 0, 0.2);
-  --box-shadow-buttons5: inset 0 -2em 0em rgb(88 145 225 / 5%), 0 -17em 29em 1px rgb(255, 255, 255), 40.8em 0em 4em rgba(10000, 0, 0, 5);
   --button-hover1: #f1dfae5e;
   --button-hover2: #e04a8b4f;
   --button-color1: #ff0083b0;
@@ -36,6 +33,7 @@
   --font-color4: #e6ffc4;
   --font-color5: #0028dd;
   --font-color6: #303022;
+  --font-color7: #ff0047;
   --accent: #b4ff50;
   --accent2: #d7ddff;
   --header: #8d8d8d;
@@ -44,18 +42,12 @@
   --footer: #494949;
   --footer2: #0f1032;
   --footer3: #000000;
-  --footer4:#8b7a7a;
-  --footer5:#797474;
   --font-family1: 'Mulish', sans-serif;
   --font-family1mulish_semibold: 'Mulish', sans-serif;
-  --background-opaque1:#00000080;
-  --background-opaque2:#0403157d;
-  --background-opaque3:#120b7f7d;
 }
 
 body {
-  background-color: var(--font-color5);
-  margin: 1px;
+  background-color: var(--body-background-color-lightgrey2);
 }
 
 .main-div {
@@ -63,71 +55,39 @@ body {
   border-radius: 40px;
 }
 
-.body {
+#body {
+  padding: 15px;
+  border: 0px solid #cd9999;
   margin-top: -105px;
-  max-width: 100%;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.body:hover {
+#body:hover {
   color: #000000;
   cursor: pointer;
 
 }
 
 header {
-  background-color: #ffffff;
+  background-color: var(--body-background-color-greypink);
   top: 0;
+  left: 0;
+  right: 0;
   position: sticky;
   cursor: pointer;
-  font-family: var(--font-family1);
-  box-shadow: var(--box-shadow-buttons5);
-  border-radius: 34px;
+  font-family: var(--font-family1mulish_semibold);
 }
 
 h1 {
-  /* padding: 20px;
-  line-height: 0.7; */
   overflow: auto;
+  color: var(--font-color6);
 }
 
-
-/*__________BUTTONS_________*/
-
-.button-class {
-  border-radius: 4vh;
-  box-shadow: var(--box-shadow-buttons3);
-  padding: 12px;
-  font-family: var(--font-family1);
-  font-weight: 400;
-  line-height: 3.8;
-  font-size: 16px;
-  background-color: #ffffff66;
-  color: #0e0c29;
- }
-
-.button-class:hover {
+h1:hover {
   cursor: pointer;
-}
-
-.button-class:visited {
-  color: var(--font-color4);
-  font-weight: 900;
-  font-size: 11px;
-  font-style: normal;
-}
-
-.button-class:focus {
-  background-color:#4c4c2e66;
-  color: #343a40;
-  font-weight: 900;
-  font-style: italic;
-}
-
-.button-class:active {
-  color: #343a40;
-  font-weight: 900;
+  color: #580872;
   font-style: normal;
 }
 
@@ -138,8 +98,9 @@ h1 {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 37px auto;
-  padding: 1px;
+  gap: 7px;
+  margin: 14px auto;
+  padding: 20px;
 }
 
 li {
@@ -176,21 +137,23 @@ li {
   display: block;
   padding: 1px;
   white-space: nowrap;
-  animation: marquee 7s linear infinite;
+  animation: marquee 20s linear infinite;
   position: relative;
   width: 100%;
-  margin-bottom: 2vh;
+  margin-bottom: -16vh;
   border-radius: 0px;
-  color:#0028dd;
+  color: #b3b5c6;
   font-family: var(--font-family1);
   z-index: 5;
 }
 
-.background-color {
-  background-color:#fffafa;
+
+#background-color {
+  background-color: #878787;
+  transition: background-color 0.1s;
   position: relative;
   border-radius: 50px;
-  margin: 103px auto;
+  margin: 160px auto;
   box-shadow: inset -0.1em 0.1em 0.5em var(--box-shadow-right1),
     inset 0.1em 0.1em 0.6em var(--box-shadow-left1);
 }
@@ -216,7 +179,7 @@ p {
 }
 
 footer {
-  background-color: #e9ecef;
+  background-color: var(--footer3);
   display: inline;
   bottom: 0;
   left: 0;
@@ -225,28 +188,89 @@ footer {
   padding: 9px;
 }
 
-.list-group-item {
-  background-color: #87878700;
-  border:none;
-}
+/*_______________CSS for Modal (before Bootrap) __________________________________
+ */
+  
+  #modal-container {
+    display: none;
+  }
 
-.btn-primary {
-  border-color: var(--body-background-color-lightgrey);
-  background-color: #495057;
-}
+  #modal-container.is-visible {
+    position: fixed;
+    padding: 60px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: var(--font-family1);
+    z-index: 999;
+    overflow: auto;
+    display: grid;
+    text-align: center;
+  }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  color: var(--dark);
-  background-color: var(--body-background-color-greypink);
-  border-color: var(--font-color7);
-}
+  .modal {
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background: var(--button-color3);
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 1.5rem;
+    overflow: auto;
+  }
+
+  .modal-close {
+    float: right;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    color: #341228;
+    text-decoration: underline;
+    font-family: var(--font-family1);
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    display: inline;
+  }
+
+
+  .modal h1 {
+    text-align: center;
+    color: var(--font-color7);
+    font-family: var(--font-family1mulish_semibold);
+    font-weight: 800;
+    display: block;
+    margin: 50px;
+  }
+
+  .modal p {
+    margin-bottom: 0;
+    color: var(--font-color7);
+  }
+
+  .pokemon-images {
+      margin:-119px -32px 16px 165px;
+      width: 50%;
+      max-width: 50%;
+      display: block;
+  }
+
 
 /* ____________ media queries ______________________________________________________
 */
 
 @media all and (max-width: 500px) {
 
-  .body {
+  #body {
+    padding: 15px;
+    border: 0px solid #cd9999;
     margin-top: -155px;
     max-width: 130vh;
     margin-left: auto;
@@ -260,44 +284,41 @@ footer {
   }
 
   header {
+    background-color: var(--body-background-color-greypink);
     top: 0;
     left: 0;
     right: 0;
     position: sticky;
     cursor: pointer;
-    font-family: var(--font-family1);
+    font-family: var(--font-family1mulish_semibold);
     line-height: 1.2;
     font-size: 0.6rem;
     color: var(--font-color5);
   }
 
-  .button-class {
-    font-size: 0.8rem;
-  }
-
   .modal p {
     margin-bottom: 0;
-    color: #e9ecef;
+    color: var(--font-color5);
     font-size: 1.2rem;
   }
 
   .modal h1 {
    text-align: center;
     font-size: 1.5rem;
-    color: #0f1614;;
-    font-family: var(--font-family1);
+    color: var(--font-color5);
+    font-family: var(--font-family1mulish_semibold);
     font-weight: 800;
   }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-  .gradient {
+  #gradient {
     background-color: none;
   }
 
   .modal p {
     margin-bottom: 0;
-    color: #e9ecef;
+    color: var(--font-color5);
     font-size: 1.2rem;
   }
 
@@ -305,104 +326,11 @@ footer {
     margin-top: 0;
     text-align: center;
     font-size: 2rem;
-    color:#0f1614;
-    font-family: var(--font-family1);
+    color: var(--font-color5);
+    font-family: var(--font-family1mulish_semibold);
     font-weight: 800;
   }
 }
 
 @media all and (max-width: 750px) {
 }
-
-
-/* CSS for Modals */
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 60px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  font-family: var(--font-family1);
-  z-index: 999;
-  overflow: auto;
-  display: grid;
-  text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: var(--button-color3);
-  padding: 20px;
-  width: 71vw;
-  max-width: 700px;
-  max-height: 700px;
-  border-radius: 20px;
-  color: #000;
-  font-size: 1.5rem;
-  overflow: auto;
-  text-align: center;
-} 
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #341228;
-  text-decoration: underline;
-  font-family: var(--font-family1);
-  cursor: pointer;
-  padding: 10px;
-  text-decoration: none;
-  display: inline;
-}
-
-button.modal-close {
-  border-radius: 1vh;
-  font-family: var(--font-family1);
-  font-weight: 400;
-}
-
-.modal h1 {
-  text-align: center;
-  color:#0f1614;
-  font-family: var(--font-family1);
-  font-weight: 800;
-  display: block;
-  margin: 50px;
-}
-
-.modal p {
-  margin-bottom: 0;
-  color: #e9ecef;
-  z-index: 998;
-  margin-left: -20px;
-}
-
-.pokemon-images {
-    margin:-119px -32px 16px 165px;
-    width: 50%;
-    max-width: 50%;
-    display: block;
-}
-
-/* 
- Modal from Bootstrap 
-
-.modal-header, .modal-body, .modal-footer {
-background: #ff0000;
-}
-
-.navbar-brand {
-  color:rgb(3 10 67 / 90%);
-} */

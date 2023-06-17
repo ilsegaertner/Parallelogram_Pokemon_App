@@ -92,48 +92,6 @@ h1:hover {
   font-style: normal;
 }
 
-/*__________BUTTONS_________*/
-/* 
-.button-class {
-  border-radius: 50vh;
-  box-shadow: var(--box-shadow-buttons1);
-  padding: 12px;
-  font-family: var(--font-family1);
-  font-weight: 400;
-  line-height: 3.5;
-  color: var(--font-color2);
-  background-color: var(--button-color4);
-}
-
-.button-class:hover {
-  cursor: pointer;
-}
-
-.button-class:visited {
-  color: var(--font-color4);
-  font-weight: 900;
-  font-size: 11px;
-  font-style: normal;
-}
-
-button:hover {
-  background-color: var(--button-hover2);
-  color: black;
-}
-
-.button-class:focus {
-  background-color: var(--button-hover2);
-  color: var(--button-color3lessopacity);
-  font-weight: 900;
-  font-style: italic;
-}
-
-.button-class:active {
-  color: var(--button-color3lessopacity2);
-  font-weight: 900;
-  font-style: normal;
-} */
-
 .all-pokes {
   display: flex;
   align-items: center;
@@ -231,79 +189,79 @@ footer {
   padding: 9px;
 }
 
-/*_______________CSS for Modal __________________________________
+/*_______________CSS for Modal (before Bootrap) __________________________________
  */
+  
+  #modal-container {
+    display: none;
+  }
 
-#modal-container {
-  display: none;
-}
+  #modal-container.is-visible {
+    position: fixed;
+    padding: 60px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-family: var(--font-family1);
+    z-index: 999;
+    overflow: auto;
+    display: grid;
+    text-align: center;
+  }
 
-#modal-container.is-visible {
-  position: fixed;
-  padding: 60px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  font-family: var(--font-family1);
-  z-index: 999;
-  overflow: auto;
-  display: grid;
-  text-align: center;
-}
+  .modal {
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background: var(--button-color3);
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    border-radius: 20px;
+    color: #000;
+    font-size: 1.5rem;
+    overflow: auto;
+  }
 
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: var(--button-color3);
-  padding: 20px;
-  width: 100%;
-  max-width: 700px;
-  max-height: 700px;
-  border-radius: 20px;
-  color: #000;
-  font-size: 1.5rem;
-  overflow: auto;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #341228;
-  text-decoration: underline;
-  font-family: var(--font-family1);
-  cursor: pointer;
-  padding: 10px;
-  text-decoration: none;
-  display: inline;
-}
+  .modal-close {
+    float: right;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    color: #341228;
+    text-decoration: underline;
+    font-family: var(--font-family1);
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    display: inline;
+  }
 
 
-.modal h1 {
-  text-align: center;
-  color: var(--font-color7);
-  font-family: var(--font-family1mulish_semibold);
-  font-weight: 800;
-  display: block;
-  margin: 50px;
-}
-
-.modal p {
-  margin-bottom: 0;
-  color: var(--font-color7);
-}
-
-.pokemon-images {
-    margin:-119px -32px 16px 165px;
-    width: 50%;
-    max-width: 50%;
+  .modal h1 {
+    text-align: center;
+    color: var(--font-color7);
+    font-family: var(--font-family1mulish_semibold);
+    font-weight: 800;
     display: block;
-}
+    margin: 50px;
+  }
+
+  .modal p {
+    margin-bottom: 0;
+    color: var(--font-color7);
+  }
+
+  .pokemon-images {
+      margin:-119px -32px 16px 165px;
+      width: 50%;
+      max-width: 50%;
+      display: block;
+  }
 
 
 /* ____________ media queries ______________________________________________________

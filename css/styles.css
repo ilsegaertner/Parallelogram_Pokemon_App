@@ -283,6 +283,10 @@ a.nav-link {
   color:rgb(3 10 67 / 90%);
 }
 
+.modal-body {
+  color: #0047ff;
+}
+
 .modal-header {
   border-top-right-radius: 28.3rem;
   /* background-color: #ff0000; */

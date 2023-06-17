@@ -56,7 +56,6 @@
 }
 
 body {
-  /* background-color: var(--body-background-color-lightgrey2); */
   background-color: var(--font-color5);
   margin: 1px;
 }
@@ -67,7 +66,6 @@ body {
 }
 
 .body {
-  /* padding: 15px; */
   margin-top: -105px;
   max-width: 100%;
   margin-left: auto;
@@ -83,8 +81,6 @@ body {
 
 header {
   background-color: #ffffff;
-  /* background-color: var(--body-background-color-greypink); */
-  /* background-color: var(--font-color1); */
   top: 0;
   position: sticky;
   cursor: pointer;
@@ -94,18 +90,10 @@ header {
 }
 
 h1 {
-  /* padding: 20px;
-  line-height: 0.7; */
   overflow: hidden;
   text-decoration: ;
 }
 
-/* h1:hover {
-  cursor: pointer;
-  /* color: #580872; 
-  color:#0028dd;
-  font-style: normal;
-} */
 
 /*__________BUTTONS_________*/
 
@@ -116,9 +104,7 @@ h1 {
   font-family: var(--font-family1);
   font-weight: 400;
   line-height: 3.8;
-  /* color: var(--font-color2); */
   font-size: 16px;
-  /* background-color: var(--button-color4); */
   background-color: #ffffff66;
   color: #0e0c29;
  }
@@ -129,33 +115,22 @@ h1 {
 
 .button-class:visited {
   color: var(--font-color4);
-  /* font-family: 'Courier New', Courier, monospace; */
   font-weight: 900;
   font-size: 11px;
   font-style: normal;
 }
-/* 
-button:hover {
-  background-color: var(--button-hover2);
-  color: black;
-} */
+
 
 .button-class:focus {
-  /* background-color: var(--button-hover2); */
   background-color:#4c4c2e66;
-  /* color: var(--button-color3lessopacity); */
   color: #343a40;
-  /* font-family: 'Courier New', Courier, monospace; */
   font-weight: 900;
   font-style: italic;
 }
 
 .button-class:active {
-  /* color: var(--button-color3lessopacity2); */
   color: #343a40;
-  /* font-family: 'Courier New', Courier, monospace; */
   font-weight: 900;
-  /*   */
   font-style: normal;
 }
 
@@ -166,7 +141,6 @@ button:hover {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  /* gap: 7px; */
   margin: 37px auto;
   padding: 1px;
 }
@@ -174,8 +148,6 @@ button:hover {
 li {
   flex-basis: auto;
   flex-shrink: 5;
-  /* background-color: #f1dfae5e; */
-  /* background-color: #e2e1b9; */
   border-top-width: 0px;
   border-top-style: solid;
   border-right-width: 0px;
@@ -189,7 +161,6 @@ li {
   padding: 20px;
   font-family: var(--font-family1);
   font-weight: 200;
-  /* background-color: #a1a01d2b; */
 }
 
 /*________Marquee_________ */
@@ -211,11 +182,8 @@ li {
   animation: marquee 7s linear infinite;
   position: relative;
   width: 100%;
-  /* margin-bottom: -16vh; */
   margin-bottom: 2vh;
   border-radius: 0px;
-  /* color: #b3b5c6; */
-  /* color: #000; */
   color:#0028dd;
   font-family: var(--font-family1);
   z-index: 5;
@@ -223,11 +191,9 @@ li {
 
 
 .background-color {
-  /* background-color: #878787; */
   background-color:#fffafa;
   position: relative;
   border-radius: 50px;
-  /* max-width: 900px; */
   margin: 103px auto;
   box-shadow: inset -0.1em 0.1em 0.5em var(--box-shadow-right1),
     inset 0.1em 0.1em 0.6em var(--box-shadow-left1);
@@ -242,15 +208,11 @@ li {
 
 p {
   transition: 0.2s;
-  /* width: 100vh; */
   padding: 58px;
   font-family: var(--font-family1);
   font-weight: 600;
   color: var(--font-color2);
-  /* color: #2a2d9b; */
-  /* background-color: #a1a01d2b; */
   text-align: center;
-  /* overflow: hidden; */
   border-radius: 40px;
   margin-top: -10px;
   margin-bottom: -10px;
@@ -258,8 +220,6 @@ p {
 }
 
 footer {
-  /* background-color: var(--footer4); */
-  /* background-color: #004085; */
   background-color: #e9ecef;
   display: inline;
   bottom: 0;
@@ -274,10 +234,6 @@ footer {
   border:none;
 }
 
-.btn {
-  /* background-color: #495057; */
-}
-
 .btn-primary {
   border-color: var(--body-background-color-lightgrey);
   background-color: #495057;
@@ -288,93 +244,14 @@ footer {
   background-color: var(--body-background-color-greypink);
   border-color: var(--font-color7);
 }
-/*_______________CSS for Modal __________________________________
- 
-
-#modal-container {
-  display: none;
-}
-
-#modal-container.is-visible {
-  position: fixed;
-  padding: 60px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  font-family: var(--font-family1);
-  z-index: 999;
-  overflow: auto;
-  display: grid;
-  text-align: center;
-}
-
-.modal {
-  margin: auto;
-  display: inline-block;
-  box-sizing: border-box;
-  background: var(--button-color3);
-  padding: 20px;
-  width: 100%;
-  max-width: 700px;
-  max-height: 700px;
-  border-radius: 20px;
-  color: #000;
-  font-size: 1.5rem;
-  overflow: auto;
-}
-
-.modal-close {
-  float: right;
-  -webkit-appearance: none;
-  border: 0;
-  background: none;
-  color: #341228;
-  text-decoration: underline;
-  font-family: var(--font-family1);
-  cursor: pointer;
-  padding: 10px;
-  text-decoration: none;
-  display: inline;
-}
-
-
-.modal h1 {
-  text-align: center;
-  color: var(--font-color7);
-  font-family: var(--font-family1mulish_semibold);
-  font-weight: 800;
-  display: block;
-  margin: 50px;
-}
-
-.modal p {
-  margin-bottom: 0;
-  color: var(--font-color7);
-}
-
-.pokemon-images {
-    margin:-119px -32px 16px 165px;
-    width: 50%;
-    max-width: 50%;
-    display: block;
-}
-*/
-
 
 /* ____________ media queries ______________________________________________________
 */
 
 @media all and (max-width: 500px) {
-  .gradient {
-    /* border: 18px solid #e2dfdf;
-    border-radius: 50px; */
-  }
+
 
   .body {
-    /* padding: 15px; */
     margin-top: -155px;
     max-width: 130vh;
     margin-left: auto;
@@ -388,8 +265,6 @@ footer {
   }
 
   header {
-    /* background-color: var(--body-background-color-greypink); */
-    /* background-color: var(--font-color1); */
     top: 0;
     left: 0;
     right: 0;
@@ -407,7 +282,6 @@ footer {
 
   .modal p {
     margin-bottom: 0;
-    /* color: var(--font-color5); */
     color: #e9ecef;
     font-size: 1.2rem;
   }
@@ -416,7 +290,6 @@ footer {
    text-align: center;
     font-size: 1.5rem;
     color: #0f1614;;
-    /* color: var(--font-color5); */
     font-family: var(--font-family1);
     font-weight: 800;
   }
@@ -424,14 +297,11 @@ footer {
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .gradient {
-    /* border: 18px solid #e2dfdf;
-    border-radius: 50px; */
     background-color: none;
   }
 
   .modal p {
     margin-bottom: 0;
-    /* color: var(--font-color5); */
     color: #e9ecef;
     font-size: 1.2rem;
   }
@@ -440,7 +310,6 @@ footer {
     margin-top: 0;
     text-align: center;
     font-size: 2rem;
-    /* color: var(--font-color5); */
     color:#0f1614;
     font-family: var(--font-family1);
     font-weight: 800;
@@ -450,12 +319,8 @@ footer {
 @media all and (max-width: 750px) {
 }
 
+
 /* CSS for Modals */
-
-
-
-
-
 
 #modal-container {
   display: none;
@@ -516,7 +381,6 @@ button.modal-close {
 
 .modal h1 {
   text-align: center;
-  /* color: var(--font-color5); */
   color:#0f1614;
   font-family: var(--font-family1);
   font-weight: 800;
@@ -526,7 +390,6 @@ button.modal-close {
 
 .modal p {
   margin-bottom: 0;
-  /* color: var(--font-color5); */
   color: #e9ecef;
   z-index: 998;
   margin-left: -20px;
@@ -547,14 +410,5 @@ background: #ff0000;
 }
 
 .navbar-brand {
-  /* color: #000000; */
   color:rgb(3 10 67 / 90%);
 }
-
-/* .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5);
-} */

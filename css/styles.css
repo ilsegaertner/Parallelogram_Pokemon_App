@@ -399,3 +399,16 @@ a.nav-link {
 /* color:#1da1f3; */
 color:#007bff;
 }
+ 
+.form-inline {
+  flex-wrap: nowrap;
+} 
+
+.btn-outline-success {
+  color: #f1f7f3;
+  background: #797474;
+}
+
+.form-control {
+  background-color: #f1f7f3;
+}

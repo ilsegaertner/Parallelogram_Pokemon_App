@@ -100,6 +100,19 @@ let pokemonRepository = (function () {
 
 })();
 
+
+//search function
+$(document).ready(function(){
+  $('#pokemon-search').on('keyup', function(){
+    var value = $(this).val().toLowerCase();
+    $('.list-group-item').filter(function(){
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+
+
 function loopPokemon(pokemon) {
   pokemonRepository.addListItem(pokemon);
 }

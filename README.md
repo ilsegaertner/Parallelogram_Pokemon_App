@@ -1,6 +1,6 @@
 # PokeScript/Parallelogram
 
-![Screenshot of the project showing the app in desktop size.] (/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%20Immersion_exercises_parallelogram_index.html_)
+![Screenshot of the project showing the app in desktop size.] (https://raw.githubusercontent.com/ilsegaertner/parallelogram/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_.png)
 
 ## About
 

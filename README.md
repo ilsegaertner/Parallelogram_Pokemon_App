@@ -1,8 +1,8 @@
-## PokeScript/Parallelogram
+# PokeScript/Parallelogram
 
 ![Screenshot of the project showing the app in desktop size.] (/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%20Immersion_exercises_parallelogram_index.html_)
 
-# About
+## About
 
 Pokemon app created with vanilla JavaScript, HTML and styled with CSS as part of CareerFoundry's Full-Stack Web Development course. This simple app loads data from an external API - the [Pokeapi](https://pokeapi.co/), displays each object on a separate button and shows further details in a modal.
 

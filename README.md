@@ -25,4 +25,9 @@ To see the hosted website, click [here](https://ilsegaertner.github.io/parallelo
 I learned many things in the process of building the app. Probably the most crucial one: 
 The arising conflicts when it comes to designing and programming at the same time. If I'd start again, I'd separate these tasks strictly.
 
+
+
+
+
+
 ![image](https://github.com/ilsegaertner/parallelogram/blob/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_%20(1).png)

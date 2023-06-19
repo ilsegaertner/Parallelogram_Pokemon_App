@@ -59,7 +59,8 @@
 
 body {
   /* background-color: var(--font-color5); */
-  background-color: #0028dd1f;
+  /* background-color: #0028dd1f; */
+  background-color: white;
   margin: 9px;
 }
 
@@ -326,7 +327,8 @@ a.nav-link {
 }
 
 .fixed-top {
-  background-color: #e0e6f6;
+  /* background-color: #e0e6f6; */
+  background-color: white;
 }
 
 

@@ -18,6 +18,7 @@ To see the hosted website, click [here](https://ilsegaertner.github.io/parallelo
 
 ![image](https://github.com/ilsegaertner/parallelogram/blob/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html%20(8).png)
 
+![image](https://github.com/ilsegaertner/parallelogram/blob/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_%20(3).png)
 
 ### What I learned
 

@@ -7,7 +7,7 @@ Pokemon app created with vanilla JavaScript, HTML and styled with CSS as part of
 
 ![image](https://raw.githubusercontent.com/ilsegaertner/parallelogram/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_.png)
 
-## About
+### About
 
 The goal of this project was to learn basic JavaScript (variables, functions, arrays, DOM interaction, AJAX, etc.) in the beginning of the course. 
 
@@ -16,4 +16,10 @@ After the implementation of the API I created an updated version using Bootstrap
 Link to the [GitHub Repository](https://github.com/ilsegaertner/parallelogram).
 To see the hosted website, click [here](https://ilsegaertner.github.io/parallelogram/).
 
-I learned many things in the process of building the app. Probably th most crucial one in the arising conflicts when it comes to designing and programming at the same time. If I'd start again, I'd separate these tasks strictly.
+![image](https://raw.githubusercontent.com/ilsegaertner/parallelogram/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_.png)
+
+
+### What I learned
+
+I learned many things in the process of building the app. Probably the most crucial one: 
+The arising conflicts when it comes to designing and programming at the same time. If I'd start again, I'd separate these tasks strictly.

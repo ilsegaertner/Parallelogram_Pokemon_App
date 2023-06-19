@@ -1,6 +1,6 @@
 # PokeScript/Parallelogram
 
-![image] (https://raw.githubusercontent.com/ilsegaertner/parallelogram/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_.png)
+![image](https://raw.githubusercontent.com/ilsegaertner/parallelogram/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_.png)
 
 ## About
 

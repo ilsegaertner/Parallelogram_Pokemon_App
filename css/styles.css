@@ -15,6 +15,7 @@
   --box-shadow-buttons3: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 .4px rgb(255, 255, 255), 0.2em 0.2em .7em rgba(0, 0, 0, 0.2);
   --box-shadow-buttons4: inset 0 -2em 1em rgb(88 145 225 / 10%), 0 -6em 29em 1px rgb(255, 255, 255), 0.2em 0em 1em rgba(10000, 0, 0, 0.2);
   --box-shadow-buttons5: inset 0 -2em 0em rgb(88 145 225 / 5%), 0 -17em 29em 1px rgb(255, 255, 255), 40.8em 0em 4em rgba(10000, 0, 0, 5);
+  --box-shadow-buttons7: inset 0 -10em 0em rgb(135 138 149 / 0%), 0 -6em 5em 5px rgb(255 255 255 / 0%), 8.3em 0.3em 22em rgb(179 253 84 / 76%);
   --button-hover1: #f1dfae5e;
   --button-hover2: #e04a8b4f;
   --button-color1: #ff0083b0;
@@ -68,11 +69,13 @@ body {
   padding: 6px;
   margin-bottom: 350px;
   background-color: #a9d0b529;
+  /* box-shadow: var(--box-shadow-buttons7); */
 }
 
 #body {
   max-width: 100%;
   margin-top: 131px;
+  border-radius: 40px;
 }
 
 #body:hover {
@@ -86,15 +89,17 @@ header {
   position: sticky;
   /* cursor: pointer; */
   font-family: var(--font-family1);
-  box-shadow: var(--box-shadow-buttons2);
-  border-radius: 34px;
+  /* box-shadow: var(--box-shadow-buttons2);
+  border-radius: 34px; */
+  margin-top: 10px;
 }
 
 h1 {
-  overflow: auto;
+  overflow: hidden;
   padding: 20px;
   /* color: #ffcc02; */
-  color: #0f1032;
+  /* color: #0f1032; */
+  color: white;
   font-size: 2.2rem;
   line-height: 0.9;
   font-weight: 600;
@@ -188,15 +193,18 @@ li {
   position: relative;
   width: 100%;
   border-radius: 0px;
-  color:var(--footer6);
+  /* color:var(--footer6); */
   font-family: var(--font-family1);
   z-index: 5;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #background-color {
   /* background-color: var(--box-shadow-left1); */
   position: relative;
-  border-radius: 50px;
+  border-radius: 40px;
   box-shadow: inset -0.1em 0.1em 0.5em var(--box-shadow-right1),
     inset 0.1em 0.1em 0.6em var(--box-shadow-left1);
 }
@@ -226,7 +234,7 @@ p {
 }
 
 footer {
-  background-color: var(--footer);
+  background-color: var(--footer3);
   display: inline;
   bottom: 0;
   left: 0;
@@ -284,7 +292,8 @@ a.nav-link {
 }
 
 .modal-body {
-  color: #0047ff;
+  /* color: #0047ff; */
+  color: black;
   padding: 20px;
 }
 
@@ -309,6 +318,10 @@ a.nav-link {
 .modal-content {
   max-height: 90vh;
   overflow-y: auto;
+  /* background-image: url("https://razukraski.com/%D1%80%D0%B0%D1%81%D0%BA%D1%80%D0%B0%D1%81%D0%BA%D0%B82/pokemon/%D0%B2%D0%B5%D1%80%D1%82/razukraski-com-pokemon%20(10).jpg"); 
+  */
+  background-color: #cccccc;
+  background-image: radial-gradient(red, yellow);
 }
 
 .fixed-top {
@@ -351,26 +364,6 @@ a.nav-link {
 } */
 
 
-/* .navbar2 {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-}
-
-.fixed-top2 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 5040; 
-} */
-
 .navbar-text {
   display: inline;
 }
@@ -387,3 +380,7 @@ a.nav-link {
     justify-content: space-between;
     align-items: baseline;
 }}
+
+.fade {
+  transition: opacity .07s linear;
+}

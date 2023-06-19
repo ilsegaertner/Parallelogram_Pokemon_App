@@ -19,8 +19,19 @@
 </head>
 
 <body>
+  <!-- <div class="social-media fixed-top2">
+    <ul class="navbar2">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/ilsegaertner" target="_blank"><img src="img/683981_github_square_connection_network_share_icon.svg" alt="Logo and Link for the Github platform" width="30" height="30"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://twitter.com/JoachimPrugl" target="_blank"><img src="img/4362955_twitter_logo_social_media_icon.svg" alt="Logo and Link for the Twitter platform" width="30" height="30"></a>        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/" target="_blank"><img src="img/4362961_linkedin_social_media_icon.svg" alt="Logo and Link for the LinkedIn platform" width="30" height="30"></a>        </li>       
+    </ul>
+  </div> -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-    <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/320px-International_Pok%C3%A9mon_logo.svg.png" width="80" height="30" class="d-inline-block align-top" alt=""></a>
+    <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/320px-International_Pok%C3%A9mon_logo.svg.png" width="54" height="20" class="d-inline-block align-top" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,16 +46,26 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://pokeapi.co/docs/v2" target="_blank">PokeAPI Doc</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
+        </li>       
       </ul>
+
+      <div class="navbar-text">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://github.com/ilsegaertner" target="_blank"><img src="img/683981_github_square_connection_network_share_icon.svg" alt="Logo and Link for the Github platform" width="20" height="20"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/JoachimPrugl" target="_blank"><img src="img/4362955_twitter_logo_social_media_icon.svg" alt="Logo and Link for the Twitter platform" width="20" height="20"></a>        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/" target="_blank"><img src="img/4362961_linkedin_social_media_icon.svg" alt="Logo and Link for the LinkedIn platform" width="20" height="20"></a>        </li>       
+        </ul>
+      </div>
       <!--<form class="form-inline">
         <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
         <button class="btn btn-secondary" type="submit" onclick="findPokemon()">Search</button>
       </form> -->
     </div>
+    
   </nav>
   <div class="gradient">
     <div id="body">
@@ -58,7 +79,7 @@
 
           <ul class="all-pokes list-group" id="myUL"></ul>
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+            aria-hidden="true" aria-describedby="Information on the Pokemon">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">

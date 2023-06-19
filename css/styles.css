@@ -195,12 +195,12 @@ li {
   position: relative;
   width: 100%;
   border-radius: 0px;
-  /* color:var(--footer6); */
+  color:var(--footer6);
   font-family: var(--font-family1);
   z-index: 5;
-  background: -webkit-linear-gradient(#ff3209, #ffcc02);
+  /* background: -webkit-linear-gradient(#ff3209, #ffcc02);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 #background-color {
@@ -312,7 +312,8 @@ a.nav-link {
 }
 
  .btn:hover {
-  color: var(--button-color2);
+  /* color: var(--button-color2); */
+  color:#007bff;
 	text-decoration: none;
   cursor: pointer;
 } 
@@ -391,4 +392,10 @@ a.nav-link {
 .main-h1 {
   color:#0f1032;
   text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+
+/* color:#1da1f3; */
+color:#007bff;
 }

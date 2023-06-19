@@ -103,6 +103,7 @@ h1 {
   font-size: 2.2rem;
   line-height: 0.9;
   font-weight: 600;
+  text-decoration: underline;
 }
 
 
@@ -196,7 +197,7 @@ li {
   /* color:var(--footer6); */
   font-family: var(--font-family1);
   z-index: 5;
-  background: -webkit-linear-gradient(#eee, #333);
+  background: -webkit-linear-gradient(#ff3209, #ffcc02);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -383,4 +384,9 @@ a.nav-link {
 
 .fade {
   transition: opacity .07s linear;
+}
+
+.main-h1 {
+  color:#0f1032;
+  text-decoration: none;
 }

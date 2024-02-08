@@ -21,5 +21,3 @@ You can access the code on the [GitHub Repository](https://github.com/ilsegaertn
 ### Challenges
 
 Building this app provided invaluable learning experiences. One significant lesson was the challenge of balancing design and programming simultaneously. In hindsight, I recognize the importance of strictly separating these tasks to minimize conflicts and streamline the development process.
-
-![image](<https://github.com/ilsegaertner/parallelogram/blob/main/img/_C__Users_Joachim_Desktop_CF_exercises_Fullstack%2520Immersion_exercises_parallelogram_index.html_%20(1).png>)
